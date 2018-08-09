@@ -56,7 +56,7 @@ export class SchedulerBot extends CommandClient {
             process.exit();
         });
 
-        const redisPort = process.env.REDIS_PORT ? parseInt(process.env.REDIS_PORT, 10) : 6379;
+        const redisPort = process.env.REDIS_PORT ? parseInt(process.env.REDIS_PORT, 1000) : 6379;
         // this._redisClient = createClient(redisPort);
         this._redisClient = createClient("rediss://redis-14611.c44.us-east-1-2.ec2.cloud.redislabs.com:14611",
             {
