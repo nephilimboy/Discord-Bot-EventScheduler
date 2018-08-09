@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+build/
+data/
+**/config/bot.config.*
+**/*.log
+.env
+*.rdb
+*.swp
+idea/
+*.idea
+*.vscode
+vscode/

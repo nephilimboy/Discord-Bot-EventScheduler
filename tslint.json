@@ -1,0 +1,33 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "trailing-comma": [true, {
+      "esSpecCompliant": true
+    }],
+    "object-literal-sort-keys": [
+      true,
+      "match-declaration-order"
+    ],
+    "one-line": {
+      "options": [
+        "check-catch",
+        "check-finally",
+        "check-open-brace",
+        "check-whitespace"
+      ]
+    },
+    "no-unused-variable": true,
+    "variable-name": {
+      "options": [
+        "allow-leading-underscore"
+      ]
+    },
+    "no-console": false,
+    "interface-name": false
+  },
+  "rulesDirectory": []
+}

@@ -1,0 +1,174 @@
+{
+  "help": {
+    "title": "**Help**",
+    "description": "All commands below come with a description of what the command does and any available subcommands.",
+    "color": 13893595,
+    "footer": {
+      "text": "To get additional help for a specific command, run \"help <command>\"."
+    },
+    "author": {
+      "name": "SchedulerBot",
+      "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+    },
+    "fields": [
+      {
+        "name": "init",
+        "value": "Initialises the guild calendar with a specific timezone."
+      },
+      {
+        "name": "event",
+        "value": "Create, update and delete calendar events.\nAvailable subcommands: `list`, `update`, `delete`"
+      },
+      {
+        "name": "perms",
+        "value": "Set role- or user-specific command permissions.\nAvailable subcommands: `nodes`, `show`"
+      },
+      {
+        "name": "prefix",
+        "value": "View the bot's current prefix for your guild."
+      },
+      {
+        "name": "settings",
+        "value": "Change the bot's prefix, timezone and channel settings."
+      },
+      {
+        "name": "ping",
+        "value": "Pings the bot.",
+        "inline": true
+      },
+      {
+        "name": "info",
+        "value": "Get some information about the bot.",
+        "inline": true
+      },
+      {
+        "name": "Need more help? Did you find an issue with the bot?",
+        "value": "Run the `support` command to get an invite link to the support server and get in touch with the developer."
+      },
+      {
+        "name": "Want to add the bot to your own server?",
+        "value": "Run the `invite` command to get an invite link for the bot."
+      }
+    ]
+  },
+  "commands": {
+    "init": {
+      "title": "**Help**: init",
+      "description": "Use this command to initialise the guild calendar with a specific timezone.\nYou **must** run this command first before you are allowed to create events.",
+      "color": 13893595,
+      "author": {
+        "name": "SchedulerBot",
+        "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+      },
+      "footer": {
+        "text": "Syntax: <> = required field, [] = optional field, | = select one. You're not supposed to type these characters in the actual command."
+      },
+      "fields": [
+        {
+          "name": "Usage",
+          "value": "`init <timezone>`\n- `timezone` A timezone name from the tz database. See https://goo.gl/NzNMon under the TZ column for a list of valid timezones.\nExamples:\n`init America/Los_Angeles`\n`init GMT`"
+        }
+      ]
+    },
+    "event": {
+      "title": "**Help**: event",
+      "description": "Create, update and delete events for your guild. The bot will notify you automatically when the event is about to start.",
+      "color": 13893595,
+      "author": {
+        "name": "SchedulerBot",
+        "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+      },
+      "footer": {
+        "text": "Syntax: <> = required field, [] = optional field, | = select one. You're not supposed to type these characters in the actual command."
+      },
+      "fields": [
+        {
+          "name": "Usage: Creating events",
+          "value": "`event <event details> [--desc <event description>] [--repeat <d|w|m>]`\n- `event details` The details for your event. Simply type the details as how you would say it.\n- `event description` An optional description for your event.\n- `d|w|m` Specifies whether to repeat the event daily, weekly or monthly.\nExamples:\n`event CS Scrims 7pm-10pm`\n`event Dota Tournament tomorrow 9a-6p --desc 32-man round-robin`\n`event Weekly Discussion Jul 20 10am to 11am --repeat w`\n`event Movie Outing next Saturday 9pm --desc Monthly movie-watching session --repeat m`"
+        },
+        {
+          "name": "Usage: Listing existing events",
+          "value": "`event list`\n"
+        },
+        {
+          "name": "Usage: Updating events",
+          "value": "`event update <event number> [event details] [--desc <event description>] [--repeat <d|w|m|off>]`\n- `event number` The number of the event that you want to update, which you can check with the `event list` command.\n- `event details` The details for your event. Simply type the details as how you would say it.\n- `event description` An optional description for your event.\n- `d|w|m|off` Specifies whether to repeat the event daily, weekly or monthly, or turn repeat off.\nExamples:\n`event update 1 CS Scrims 7p-10p`\n`event update 1 --desc Scrims vs amateur teams`\n`event update 1 --repeat d`\n`event update 1 CS:GO Scrims 7p-9p --desc Amateur scrimmages --repeat w`"
+        },
+        {
+          "name": "Usage: Deleting events",
+          "value": "`event delete <event number>`\n- `event number` The number of the event that you want to update, which you can check with the `event list` command.\nExample:\n`event delete 1`"
+        }
+      ]
+    },
+    "perms": {
+      "title": "**Help**: perms",
+      "description": "Set command usage permissions for certain roles or users to limit command usage.",
+      "color": 13893595,
+      "author": {
+        "name": "SchedulerBot",
+        "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+      },
+      "footer": {
+        "text": "Syntax: <> = required field, [] = optional field, | = select one. You're not supposed to type these characters in the actual command."
+      },
+      "fields": [
+        {
+          "name": "Usage: Modifying permissions",
+          "value": "`perms <allow | deny> <permNode> [--role <role> | --user <user>]`\n- `allow | deny` Allow or deny the specified permission node.\n- `permNode` The permission node you want to modify. Run `perms nodes` for a list of nodes.\n- `role` The role that you want to modify the permission for.\n- `user` The user that you want to modify the permission for.\nExamples:\n`perms deny event.delete --role Normal Users`\n`perms allow ping --user Andy`"
+        },
+        {
+          "name": "Usage: Listing available permission nodes",
+          "value": "`perms nodes`"
+        },
+        {
+          "name": "Usage: Showing current permissions",
+          "value": "`perms show [--node <permNode> | --role <role> | --user <user>]`\n- `permNode` The permission node that you want to show permissions for.\n- `role` The role that you want to show permissions for.\n- `user` The user that you want to show permissions for.\nExamples:\n`perms show --node ping`\n`perms show --role Normal Users`\n`perms show --user andy`"
+        }
+      ]
+    },
+    "prefix": {
+      "title": "**Help**: prefix",
+      "description": "View the bot's prefix for your guild.",
+      "color": 13893595,
+      "author": {
+        "name": "SchedulerBot",
+        "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+      },
+      "footer": {
+        "text": "Syntax: <> = required field, [] = optional field, | = select one. You're not supposed to type these characters in the actual command."
+      },
+      "fields": [
+        {
+          "name": "Usage",
+          "value": "`prefix`"
+        }
+      ]
+    },
+    "settings": {
+      "title": "**Help**: settings",
+      "description": "Change the bot's prefix, timezone and default channel settings.",
+      "color": 13893595,
+      "author": {
+        "name": "SchedulerBot",
+        "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+      },
+      "footer": {
+        "text": "Syntax: <> = required field, [] = optional field, | = select one. You're not supposed to type these characters in the actual command."
+      },
+      "fields": [
+        {
+          "name": "Prefix setting",
+          "value": "`settings prefix [new prefix]`\n- `new prefix` The new prefix that you want to change to.\nExamples:\n`settings prefix` - displays the current prefix setting\n`settings prefix ++` - change the prefix to `++`"
+        },
+        {
+          "name": "Default channel setting",
+          "value": "`settings defaultchannel #new-channel`\n- `#new-channel` The new default channel (as a mention) that you want to change to.\nExamples:\n`settings defaultchannel` - displays the current default channel setting\n`settings defaultchannel #general` - change the default channel to #general"
+        },
+        {
+          "name": "Timezone setting",
+          "value": "`settings timezone [new timezone]`\n- `new timezone` The new timezone that you want to change to.\nExamples:\n`settings timezone` - displays the current timezone setting\n`settings timezone Asia/Tokyo` - change the timezone to Asia/Tokyo"
+        }
+      ]
+    }
+  }
+}

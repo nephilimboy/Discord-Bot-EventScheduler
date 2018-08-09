@@ -1,0 +1,38 @@
+{
+  "commandResponses": {
+    "invalidInput": "Invalid input.",
+    "permissionDenied": "You are not permitted to use this command.",
+    "supportServerLink": "Click the following link to join the bot's support server. https://discord.gg/CRxRn5X",
+    "botInviteLink": "Click the following link to invite the bot to your server. https://goo.gl/E7hLK9",
+    "timezoneInitialized": "Timezone already initialized.",
+    "timezoneNotSet": "Calendar timezone not set. Run the `init <timezone>` command to set the timezone first.",
+    "timezoneNotFound": "Timezone not found. See https://goo.gl/NzNMon under the TZ column for a list of valid timezones.",
+    "eventParseFail": "Failed to parse event data.",
+    "createEventInPast": "Cannot create an event that starts or ends in the past.",
+    "updateEventInPast": "Cannot update to an event that starts or ends in the past.",
+    "updateActiveEvent": "Cannot update an event that is currently active.",
+    "eventNotFound": "Event not found.",
+    "nodeNotFound": "Node not found.",
+    "roleOrUserNotFound": "No matching role/user found.",
+    "permissionModifySuccess": "Permission successfully modified."
+  },
+  "commandUsage": {
+    "ping": "`ping`",
+    "prefix": "`prefix [newPrefix]`",
+    "info": "`info`",
+    "support": "`support`",
+    "invite": "`invite`",
+    "init": "`init <timezone>`",
+    "event": {
+      "create": "`event <event details> [--desc <event description>] [--repeat <d|w|m>]`",
+      "list": "`event list`",
+      "delete": "`event delete <eventNumber>`",
+      "update": "`event update <eventNumber> [<event details>] [--desc <event description>] [--repeat <d|w|m|off>]`"
+    },
+    "perms": {
+      "modify": "`perms <allow | deny> <permNode> [--role <role> | --user <user>]`",
+      "nodes": "`perms nodes`",
+      "show": "`perms show [--node <permNode> | --role <role> | --user <user>]`"
+    }
+  }
+}
