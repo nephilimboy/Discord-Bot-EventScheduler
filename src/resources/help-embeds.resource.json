@@ -7,8 +7,8 @@
       "text": "To get additional help for a specific command, run \"help <command>\"."
     },
     "author": {
-      "name": "SchedulerBot",
-      "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+      "name": "[TyS]Event Scheduler",
+      "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
     },
     "fields": [
       {
@@ -57,8 +57,8 @@
       "description": "Use this command to initialise the guild calendar with a specific timezone.\nYou **must** run this command first before you are allowed to create events.",
       "color": 13893595,
       "author": {
-        "name": "SchedulerBot",
-        "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+        "name": "[TyS]Event Scheduler",
+        "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       },
       "footer": {
         "text": "Syntax: <> = required field, [] = optional field, | = select one. You're not supposed to type these characters in the actual command."
@@ -75,8 +75,8 @@
       "description": "Create, update and delete events for your guild. The bot will notify you automatically when the event is about to start.",
       "color": 13893595,
       "author": {
-        "name": "SchedulerBot",
-        "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+        "name": "[TyS]Event Scheduler",
+        "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       },
       "footer": {
         "text": "Syntax: <> = required field, [] = optional field, | = select one. You're not supposed to type these characters in the actual command."
@@ -105,8 +105,8 @@
       "description": "Set command usage permissions for certain roles or users to limit command usage.",
       "color": 13893595,
       "author": {
-        "name": "SchedulerBot",
-        "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+        "name": "[TyS]Event Scheduler",
+        "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       },
       "footer": {
         "text": "Syntax: <> = required field, [] = optional field, | = select one. You're not supposed to type these characters in the actual command."
@@ -131,8 +131,8 @@
       "description": "View the bot's prefix for your guild.",
       "color": 13893595,
       "author": {
-        "name": "SchedulerBot",
-        "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+        "name": "[TyS]Event Scheduler",
+        "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       },
       "footer": {
         "text": "Syntax: <> = required field, [] = optional field, | = select one. You're not supposed to type these characters in the actual command."
@@ -149,8 +149,8 @@
       "description": "Change the bot's prefix, timezone and default channel settings.",
       "color": 13893595,
       "author": {
-        "name": "SchedulerBot",
-        "icon_url": "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+        "name": "[TyS]Event Scheduler",
+        "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       },
       "footer": {
         "text": "Syntax: <> = required field, [] = optional field, | = select one. You're not supposed to type these characters in the actual command."

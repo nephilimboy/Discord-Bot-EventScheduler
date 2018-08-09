@@ -68,8 +68,8 @@ export class EventEmbedFactory {
         }
       ],
       author: {
-        name: "SchedulerBot",
-        icon_url: "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
+        name: "[TyS]Event Scheduler",
+        icon_url: "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       }
     };
     return embed;

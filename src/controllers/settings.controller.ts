@@ -20,7 +20,7 @@ export class SettingsController extends CommandController {
       this.bot.createMessage(msg.channel.id, {
         embed: {
           author: {
-            name: "SchedulerBot",
+            name: "[TyS]Event Scheduler",
             icon_url: "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
           },
           color: 13893595,
@@ -59,7 +59,7 @@ export class SettingsController extends CommandController {
         this.bot.createMessage(msg.channel.id, {
           embed: {
             author: {
-              name: "SchedulerBot",
+              name: "[TyS]Event Scheduler",
               icon_url: "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
             },
             color: 13893595,
@@ -97,7 +97,7 @@ export class SettingsController extends CommandController {
         this.bot.createMessage(msg.channel.id, {
           embed: {
             author: {
-              name: "SchedulerBot",
+              name: "[TyS]Event Scheduler",
               icon_url: "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
             },
             color: 13893595,
@@ -136,7 +136,7 @@ export class SettingsController extends CommandController {
         this.bot.createMessage(msg.channel.id, {
           embed: {
             author: {
-              name: "SchedulerBot",
+              name: "[TyS]Event Scheduler",
               icon_url: "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
             },
             color: 13893595,
