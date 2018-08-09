@@ -54,7 +54,7 @@ CalendarSchema.methods.addEvent = async function(event: EventInterface): Promise
   }
   else {
     for (let i = 0; i < this.events.length; i++) {
-      const element = this.events[i];
+      const element = this.events[i];;
       if (moment(element.startDate).isSameOrAfter(event.startDate)) {
         this.events.splice(i, 0, newEvent);
         eventIndex = i;
