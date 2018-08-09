@@ -6,7 +6,7 @@
   "scripts": {
     "gulp": "gulp",
     "build": "gulp build",
-    "start": "concurrently --kill-others \"gulp watch\" \"npm start\"",
+    "start": "gulp build && nodemon --inspect=$PORT build/app.js --ignore data/",
     "lint": "tslint -p tsconfig.json -c tslint.json 'src/**/*.ts'",
     "dev": "concurrently --kill-others \"gulp watch\" \"npm start\""
   },
