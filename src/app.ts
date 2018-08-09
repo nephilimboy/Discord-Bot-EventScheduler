@@ -1,6 +1,9 @@
 import * as dotenv from "dotenv";
 import * as mongoose from "mongoose";
 
+const express = require("express");
+const app = express();
+
 import {SchedulerBot} from "./classes/schedulerbot.class";
 
 dotenv.config();
@@ -13,5 +16,5 @@ dotenv.config();
 // }
 
 const bot: SchedulerBot = new SchedulerBot();
-
-bot.on("dbconnect", () => bot.connect());
+app.listen(process.env.PORT || 5000, () => console.log("bot started at 5000!"));
+bot.on("dbconnect", () => bot.connect())
