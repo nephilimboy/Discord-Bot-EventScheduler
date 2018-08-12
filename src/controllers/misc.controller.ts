@@ -42,7 +42,7 @@ export class MiscController extends CommandController {
     const uptimeParsed: Period = new Period(this.bot.uptime);
     const embed: EmbedOptions = {
       author: {
-        name: "[TyS]Event Scheduler",
+        name: "[ToyS]Event Scheduler",
         icon_url: "https://cdn.discordapp.com/avatars/339019867325726722/e5fca7dbae7156e05c013766fa498fe1.png"
       },
       color: 13893595,

@@ -7,7 +7,7 @@
       "text": "To get additional help for a specific command, run \"help <command>\"."
     },
     "author": {
-      "name": "[TyS]Event Scheduler",
+      "name": "[ToyS]Event Scheduler",
       "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
     },
     "fields": [
@@ -57,7 +57,7 @@
       "description": "Use this command to initialise the guild calendar with a specific timezone.\nYou **must** run this command first before you are allowed to create events.",
       "color": 13893595,
       "author": {
-        "name": "[TyS]Event Scheduler",
+        "name": "[ToyS]Event Scheduler",
         "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       },
       "footer": {
@@ -75,7 +75,7 @@
       "description": "Create, update and delete events for your guild. The bot will notify you automatically when the event is about to start.",
       "color": 13893595,
       "author": {
-        "name": "[TyS]Event Scheduler",
+        "name": "[ToyS]Event Scheduler",
         "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       },
       "footer": {
@@ -105,7 +105,7 @@
       "description": "Set command usage permissions for certain roles or users to limit command usage.",
       "color": 13893595,
       "author": {
-        "name": "[TyS]Event Scheduler",
+        "name": "[ToyS]Event Scheduler",
         "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       },
       "footer": {
@@ -131,7 +131,7 @@
       "description": "View the bot's prefix for your guild.",
       "color": 13893595,
       "author": {
-        "name": "[TyS]Event Scheduler",
+        "name": "[ToyS]Event Scheduler",
         "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       },
       "footer": {
@@ -149,7 +149,7 @@
       "description": "Change the bot's prefix, timezone and default channel settings.",
       "color": 13893595,
       "author": {
-        "name": "[TyS]Event Scheduler",
+        "name": "[ToyS]Event Scheduler",
         "icon_url": "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       },
       "footer": {

@@ -68,7 +68,7 @@ export class EventEmbedFactory {
         }
       ],
       author: {
-        name: "[TyS]Event Scheduler",
+        name: "[ToyS]Event Scheduler",
         icon_url: "https://cdn.discordapp.com/app-icons/476981986809085952/b814871ee796b5671824fed1ac682322.png"
       }
     };
